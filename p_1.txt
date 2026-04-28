@@ -1,0 +1,9 @@
+syntax easy
+readable
+versatile - used in any AI,ML,GUI, web, app , all using libraries in python 
+dynamic- no need to mention datatype
+
+DT 
+mutable
+immutable
+
