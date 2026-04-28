@@ -1,3 +1,23 @@
+Python Syllabus
+Module 1: Python Introduction (Why, What, Installation, Variables, Numbers, String, Print, Simple Input/Output)
+a= 10
+**
+Module 2: Python Basics/Fundamentals (Operators, Comments, Various Data Types(List, Tuple, Set, Dictionary, String Formatting)
+Module 3: Program Flow (if else, for, while loop, break continue, range, List Comprehension)
+Module 4: Functions (Arguments & Parameters, Anonymous/Lambda, User Defined, In-Built)
+Module 5: File Handling (CSV, JSON, Importing, Read/Write)
+Module 6: Exceptions Handling(Build in, raise errors, error handling, try-except-finally)
+Module 7: OOPs in Python (Class & Object, Inheritance, Abstraction, Polymorphism)
+Module 8: Data Structure(Array, Stack, Queue, Searching, Sorting, Trees)
+Module 9: Database in Python (Connectivity, SQLite, Select, update, Insert, Delete, Filter)
+Module 10: Advance Topics (Decorators, Generators, Iterables, Map, Filter)
+
+
+
+
+
+
+
 syntax easy
 readable
 versatile - used in any AI,ML,GUI, web, app , all using libraries in python 
@@ -7,3 +27,56 @@ DT
 mutable
 immutable
 
+Introduction to Python
+Python is a popular programming language. It was created by Guido van Rossum, and released in 1991 at CWI(Centrum Wiskunde & Informatica) Netherland.
+Python is General Purpose, High Level Programming Language.
+Python is a dynamic.
+
+general purpose- used in all domain, web,game app etc
+HLL- human understandable lamguage, syntax is not given importance
+Dynamic- not need to mention datatype simply
+a= 9 // int a =9 
+
+
+
+
+Why Python?
+Simple & Easy to Learn -> simple like english
+
+Platform Independent - mac , linux, windows
+
+Free & Open Source- its free and easy to install 
+
+Interpreted -line by line exceute  (bytecode-compiled)  - all in one load execute whole file by converting it in byte  , linking loading , execute speed faster 
+
+Rich Library Support - 1lk and more libraries, use build in code easily 
+
+Embeddable (other language to python ) & Extensible - (python to other language)
+
+Portable - to transfer on other device 
+
+Robust- error mangage , memory manage 
+
+Where Python is Used?
+Web frameworks and applications
+GUI-based desktop applications
+Graphic design, image processing applications, Games, and Scientific/ computational Applications
+ML, AI, Neural networks
+Data science, Data visualization
+IOT
+Database development
+
+
+
+"Hello World" in Python vs Others
+
+print("Hello, World!")
+
+--C
+#include <stdio.h> int main() { printf("Hello, World!\n"); return 0;
+}
+
+--JAVA
+public class HelloWorld {
+public static void main(String[] args) { System.out.println("Hello, World!");
+}
