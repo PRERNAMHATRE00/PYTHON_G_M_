@@ -1,0 +1,133 @@
+'''
+name = input("Enter your name : ")
+print("Hi ," +name)
+print(type(name))
+'''
+
+
+'''Enter your name : Suga
+Hi ,Suga
+<class 'str'>'''
+
+'''nos =input("Enter a numver : ")
+print(nos)
+print(type(nos))
+
+'''
+
+'''Enter a numver : 11
+11
+<class 'str'>'''
+
+
+'''
+nos1 =input("Enter a number : ")
+print(nos1)
+print(type(nos1))
+nos1 = nos1+1
+print(nos1)
+'''
+
+'''
+Enter a number : 11
+11
+<class 'str'>
+Traceback (most recent call last):
+  File "c:\Users\acer\Desktop\PYTHON_G_M\input.py", line 26, in <module>
+    nos1 = nos1+1
+           ~~~~^~
+TypeError: can only concatenate str (not "int") to str
+'''
+
+
+# TYPE CASTING
+INT
+num = int(input("Enter any Number : "))
+print(num)
+print(type(num))
+num= num+5
+print(num)
+
+'''
+
+Enter any Number : 11
+11
+<class 'int'>
+16
+'''
+
+FLOAT
+
+# TYPE CASTING
+num = float(input("Enter any Number : "))
+print(num)
+print(type(num))
+num= num+5
+print(num)
+
+'''
+
+Enter any Number : 11
+11.0
+<class 'float'>
+16.0
+'''
+
+BOOLEAN
+
+True
+num = bool(input("Enter any Number : "))
+print(num)
+print(type(num))
+
+
+'''
+Enter any Number : 10
+True
+<class 'bool'>
+'''
+
+FALSE
+
+num = bool(input("Enter any Number : "))
+print(num)
+print(type(num))
+
+
+'''
+Enter any Number : 
+False
+<class 'bool'>
+
+'''
+
+INPUT
+///////Right
+var1=1
+print(var1)
+var_1=2
+print(var_1)
+_var1=3
+print(_var1)
+deff=8
+print(deff)
+var_var2=6
+print(var_var2)
+
+////XXXXX wrong
+1var=4     #invalid decimal lteral '''
+print(1var)
+var 1=5   # invalid syntax
+print(var 1)
+def=7 #invalid syntax
+print(def)
+
+#case sensitive
+a=11
+A=32
+print(a)//11
+print(A)// 32
+
+
+
+
