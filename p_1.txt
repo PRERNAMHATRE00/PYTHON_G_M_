@@ -80,3 +80,608 @@ print("Hello, World!")
 public class HelloWorld {
 public static void main(String[] args) { System.out.println("Hello, World!");
 }
+
+
+in C, c+, java we have to explicitly have to mention data type but in python simply
+a=11  int
+a='hi"
+
+Variables in Python
+If the Cost Price is 25% of Selling Price, then find Profit Percentage?
+Variables are used to store and manage data
+
+Variable name must start with a letter or the underscore character
+Variable name cannot start with a number.
+Variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _)
+Variable name case-sensitive (Name, name and NAME are three different variables)
+
+Variable name cannot be any of the Python keywords
+
+In python no need to tell type during run time to identify on iits own 
+
+Data Types in Python
+1. Numeric Types
+int
+float
+complex
+2. Text Type
+str
+3. Boolean Type
+bool
+4. Sequence Types
+list
+tuple
+range
+5. Mapping Type
+dict
+6. Set Types
+set
+7. Binary Types
+bytes
+bytearray
+8. None Type
+NoneType (None in Python)
+
+
+list - list of item but mutable(changable)
+tuple- list of item but immitable(unchangable)
+range- for certain range like 0 -10 
+
+dict- key value pairs , like sql
+
+set - unique but unordered
+
+bytes- img, video
+
+none - unintialise data
+while asigning none alue "N" must be capital- None
+Boolean - "T" must be capitla True
+
+byte = immutable- unchangeable
+bytearray= mutable- changable, maniupltable 
+
+Good question — this is exactly where many beginners get confused, so let’s make it crystal clear.
+
+---
+
+# 🧠 First: Your code is slightly wrong
+
+You wrote:
+
+```python
+byte = bytes(65,66,97)
+byte = bytearray(65,66,97)
+```
+
+❌ This is not valid Python usage.
+
+Correct way is:
+
+```python
+byte = bytes([65, 66, 97])
+print(byte)
+print(type(byte))
+
+byte_arr = bytearray([65, 66, 97])
+print(byte_arr)
+print(type(byte_arr))
+```
+
+---
+
+# 🧠 Now output meaning
+
+### ASCII values:
+
+* 65 = 'A'
+* 66 = 'B'
+* 97 = 'a'
+
+So output will be:
+
+```
+b'ABa'
+<class 'bytes'>
+
+bytearray(b'ABa')
+<class 'bytearray'>
+```
+
+---
+
+# 🔥 Now your main confusion: immutable vs mutable
+
+## 💎 1. bytes = IMMUTABLE (unchangeable)
+
+Once created, you **cannot modify it**
+
+Example:
+
+```python
+b = bytes([65, 66, 97])
+b[0] = 64   ❌ ERROR
+```
+
+👉 Python will say:
+
+> "bytes object does not support item assignment"
+
+---
+
+## 🧪 2. bytearray = MUTABLE (changeable)
+
+You CAN modify it:
+
+```python
+b = bytearray([65, 66, 97])
+
+b[0] = 64
+print(b)
+```
+
+Output:
+
+```
+bytearray(b'@Ba')
+```
+
+---
+
+# 🧠 Now your real question (very important)
+
+> “If I want to change values like 65,66,97 → 64,67,90, why does mutable/immutable matter?”
+
+### 🔥 Answer:
+
+Because Python gives you TWO different use cases:
+
+---
+
+## 🔒 bytes (immutable)
+
+Use when:
+
+* Data should NEVER change
+* Security / safety matters
+* Data is fixed (like image, file, network packet)
+
+👉 Example:
+
+* sending data over internet
+* reading file content
+
+You don’t want accidental changes.
+
+---
+
+## ✏️ bytearray (mutable)
+
+Use when:
+
+* You WANT to modify data
+* You are editing raw data
+
+👉 Example:
+
+* modifying image pixels
+* editing binary data
+* building buffers
+
+---
+
+# 🧠 Simple real-life analogy
+
+## bytes = printed photo 📸
+
+You cannot edit it
+
+## bytearray = photo in Photoshop 🖌️
+
+You can edit pixels
+
+---
+
+# ⚡ Important concept (VERY IMPORTANT)
+
+When you do:
+
+```python
+b[0] = 64
+```
+
+You are NOT changing "numbers"
+
+You are changing **raw memory bytes**
+
+That’s why Python protects `bytes`.
+
+---
+
+# 💡 Final simple understanding
+
+| Type      | Change allowed? | Use case             |
+| --------- | --------------- | -------------------- |
+| bytes     | ❌ No            | fixed data           |
+| bytearray | ✅ Yes           | editable binary data |
+
+---
+
+# 🚀 One-line memory trick
+
+> bytes = locked data 🔒
+> bytearray = editable data ✏️
+
+---
+
+If you want next step, I can show you:
+👉 real-world use of bytes in images + files + networking
+👉 OR interview questions on this topic (very important)
+Good question — this is exactly where many beginners get confused, so let’s make it crystal clear.
+
+---
+
+# 🧠 First: Your code is slightly wrong
+
+You wrote:
+
+```python
+byte = bytes(65,66,97)
+byte = bytearray(65,66,97)
+```
+
+❌ This is not valid Python usage.
+
+Correct way is:
+
+```python
+byte = bytes([65, 66, 97])
+print(byte)
+print(type(byte))
+
+byte_arr = bytearray([65, 66, 97])
+print(byte_arr)
+print(type(byte_arr))
+```
+
+---
+
+# 🧠 Now output meaning
+
+### ASCII values:
+
+* 65 = 'A'
+* 66 = 'B'
+* 97 = 'a'
+
+So output will be:
+
+```
+b'ABa'
+<class 'bytes'>
+
+bytearray(b'ABa')
+<class 'bytearray'>
+```
+
+---
+
+# 🔥 Now your main confusion: immutable vs mutable
+
+## 💎 1. bytes = IMMUTABLE (unchangeable)
+
+Once created, you **cannot modify it**
+
+Example:
+
+```python
+b = bytes([65, 66, 97])
+b[0] = 64   ❌ ERROR
+```
+
+👉 Python will say:
+
+> "bytes object does not support item assignment"
+
+---
+
+## 🧪 2. bytearray = MUTABLE (changeable)
+
+You CAN modify it:
+
+```python
+b = bytearray([65, 66, 97])
+
+b[0] = 64
+print(b)
+```
+
+Output:
+
+```
+bytearray(b'@Ba')
+```
+
+---
+
+# 🧠 Now your real question (very important)
+
+> “If I want to change values like 65,66,97 → 64,67,90, why does mutable/immutable matter?”
+
+### 🔥 Answer:
+
+Because Python gives you TWO different use cases:
+
+---
+
+## 🔒 bytes (immutable)
+
+Use when:
+
+* Data should NEVER change
+* Security / safety matters
+* Data is fixed (like image, file, network packet)
+
+👉 Example:
+
+* sending data over internet
+* reading file content
+
+You don’t want accidental changes.
+
+---
+
+## ✏️ bytearray (mutable)
+
+Use when:
+
+* You WANT to modify data
+* You are editing raw data
+
+👉 Example:
+
+* modifying image pixels
+* editing binary data
+* building buffers
+
+---
+
+# 🧠 Simple real-life analogy
+
+## bytes = printed photo 📸
+
+You cannot edit it
+
+## bytearray = photo in Photoshop 🖌️
+
+You can edit pixels
+
+---
+
+# ⚡ Important concept (VERY IMPORTANT)
+
+When you do:
+
+```python
+b[0] = 64
+```
+
+You are NOT changing "numbers"
+
+You are changing **raw memory bytes**
+
+That’s why Python protects `bytes`.
+
+---
+
+# 💡 Final simple understanding
+
+| Type      | Change allowed? | Use case             |
+| --------- | --------------- | -------------------- |
+| bytes     | ❌ No            | fixed data           |
+| bytearray | ✅ Yes           | editable binary data |
+
+---
+
+# 🚀 One-line memory trick
+
+> bytes = locked data 🔒
+> bytearray = editable data ✏️
+
+---
+
+If you want next step, I can show you:
+👉 real-world use of bytes in images + files + networking
+👉 OR interview questions on this topic (very important)
+Good question — this is exactly where many beginners get confused, so let’s make it crystal clear.
+
+---
+
+# 🧠 First: Your code is slightly wrong
+
+You wrote:
+
+```python
+byte = bytes(65,66,97)
+byte = bytearray(65,66,97)
+```
+
+❌ This is not valid Python usage.
+
+Correct way is:
+
+```python
+byte = bytes([65, 66, 97])
+print(byte)
+print(type(byte))
+
+byte_arr = bytearray([65, 66, 97])
+print(byte_arr)
+print(type(byte_arr))
+```
+
+---
+
+# 🧠 Now output meaning
+
+### ASCII values:
+
+* 65 = 'A'
+* 66 = 'B'
+* 97 = 'a'
+
+So output will be:
+
+```
+b'ABa'
+<class 'bytes'>
+
+bytearray(b'ABa')
+<class 'bytearray'>
+```
+
+---
+
+# 🔥 Now your main confusion: immutable vs mutable
+
+## 💎 1. bytes = IMMUTABLE (unchangeable)
+
+Once created, you **cannot modify it**
+
+Example:
+
+```python
+b = bytes([65, 66, 97])
+b[0] = 64   ❌ ERROR
+```
+
+👉 Python will say:
+
+> "bytes object does not support item assignment"
+
+---
+
+## 🧪 2. bytearray = MUTABLE (changeable)
+
+You CAN modify it:
+
+```python
+b = bytearray([65, 66, 97])
+
+b[0] = 64
+print(b)
+```
+
+Output:
+
+```
+bytearray(b'@Ba')
+```
+
+---
+
+# 🧠 Now your real question (very important)
+
+> “If I want to change values like 65,66,97 → 64,67,90, why does mutable/immutable matter?”
+
+### 🔥 Answer:
+
+Because Python gives you TWO different use cases:
+
+---
+
+## 🔒 bytes (immutable)
+
+Use when:
+
+* Data should NEVER change
+* Security / safety matters
+* Data is fixed (like image, file, network packet)
+
+👉 Example:
+
+* sending data over internet
+* reading file content
+
+You don’t want accidental changes.
+
+---
+
+## ✏️ bytearray (mutable)
+
+Use when:
+
+* You WANT to modify data
+* You are editing raw data
+
+👉 Example:
+
+* modifying image pixels
+* editing binary data
+* building buffers
+
+---
+
+# 🧠 Simple real-life analogy
+
+## bytes = printed photo 📸
+
+You cannot edit it
+
+## bytearray = photo in Photoshop 🖌️
+
+You can edit pixels
+
+---
+
+# ⚡ Important concept (VERY IMPORTANT)
+
+When you do:
+
+```python
+b[0] = 64
+```
+
+You are NOT changing "numbers"
+
+You are changing **raw memory bytes**
+
+That’s why Python protects `bytes`.
+
+---
+
+# 💡 Final simple understanding
+
+| Type      | Change allowed? | Use case             |
+| --------- | --------------- | -------------------- |
+| bytes     | ❌ No            | fixed data           |
+| bytearray | ✅ Yes           | editable binary data |
+
+---
+
+# 🚀 One-line memory trick
+
+> bytes = locked data 🔒
+> bytearray = editable data ✏️
+
+---
+
+Mutable - writable and reable both 
+can make changes
+slow speed
+
+List
+Sets
+Dictionary
+
+immutable - readble only
+cant make cahnges , can delete it but can chnage it 
+fast speed 
+for security when we dont whant anyone to change value 
+
+Numbers - 0-9,0.0-0.9  , same type of data only , only number no charcater or string 
+
+Strings- A-Z,a-z , same data type only , only charcters strings , no numbers 
+TTuple
+
+
+order doesnt means sort , order means to create a  address, proper order , searching 
