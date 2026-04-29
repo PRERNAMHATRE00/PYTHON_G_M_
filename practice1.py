@@ -141,3 +141,38 @@ print(set1)
 Error
 ✓ Correct! Sets automatically remove duplicates. So 3 appears only once. Output: {1, 2, 3, 5}
 
+**SyntaxError vs TypeError**
+
+**SyntaxError** = Wrong spelling/grammar of code. Python reads your code top to bottom before running — if it sees something broken, it stops immediately and never even starts.
+
+Like a teacher refusing to read your essay because your first sentence makes zero sense.
+
+```python
+1var = 4    # SyntaxError — can't start with number
+def = 7     # SyntaxError — def is Python's word, not yours
+```
+
+**TypeError** = Code is written correctly, but you're doing something *impossible*. Python starts running, reaches that line, and says "wait... this doesn't make sense."
+
+Like writing a perfect sentence but asking "add the word 'hello' plus the number 5" — grammatically fine, logically impossible.
+
+```python
+"11" + 1    # TypeError — string + number = impossible
+name[0] = "x"  # TypeError — strings can't be changed
+```
+
+One line summary: **Syntax = bad writing. Type = bad action.**
+
+---
+
+**Why `b` in front of `b'ABa'`**
+
+Python has two kinds of "text looking things":
+
+`"ABa"` → normal string, made for humans, stores words and sentences.
+
+`b"ABa"` → bytes, made for computers, stores raw data (images, files, network packets). It just *looks* like text because Python converts the numbers (65, 66, 97) into their letters to make it readable for you.
+
+The `b` is Python saying — *"don't confuse these two, they are different things."*
+
+Real life: `"ABa"` is a word written on paper. `b"ABa"` is that same word in morse code. Looks similar, totally different format.
