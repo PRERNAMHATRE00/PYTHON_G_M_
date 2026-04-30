@@ -1,0 +1,13 @@
+typecastiong:
+
+by default input() always return string even if user enter integer number
+
+convert one datatype to another datatype is called typecasting
+
+implicit  python cobert datatype on its own
+python on it own convert data , python convert lower datatype into higher data type not the other way(convert higher data type to lower)
+eg if we perform addition between int and float than its final result will be float because python typecaste int lower data type to float data type becuase float is higher level datatype, the reason python doe sthis because to prevent low of data ,in this example int + float , f;oat require more memory compared to int ,so it convert int to float in order to prevent data loss and get accurate answer 
+
+
+explicit user convert datatype based on its own requirement to avoid getting wrong solution 
+

@@ -116,7 +116,7 @@ print(disc1)
 
 set1={2,  4,3,7,5}
 print(set1) #{2, 3, 4, 5, 7}
-'''
+
 
 set1={"b","d",'a'}
 print(set1)
@@ -129,3 +129,4 @@ print(set1)
 What you put in set	Order behavior
 Small integers (like 1,2,3,4,5)	✅ Always in order
 Anything else (words, letters, big numbers)	❌ Random/Weird order
+'''

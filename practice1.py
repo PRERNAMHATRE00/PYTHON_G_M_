@@ -1,10 +1,11 @@
+'''
 my_set={5,2,8,2,1}
 print(my_set) # 1,2,5,8
 
 tup=(10,20,30)
 tup[0]=90 # error
 
-'''
+
 Which data types are mutable
 list, dictionary ,set
 
@@ -30,7 +31,7 @@ print(set1)  # Order changes sometimes! - because set is unordered
 tuple1 = (1, 2, 3) - tuple is initilize in round bracket is immutable
 
 
-'''
+
 
 num= input("enter age : ")
 print(num + 5)
@@ -381,3 +382,55 @@ if = 20
 
 ---
 
+///////////////////////////////////////////////////////////////////////////
+Round 1: Data Types (2 min)
+Q1. What are the 3 mutable data types in Python?
+List  Dictionary set
+Q2. What's the difference between list and tuple?
+lsit is mutable and use []
+tuple are immutable and use ()
+Q3. What will this print?
+
+python
+set1 = {5, 2, 8, 2, 1}
+print(set1)
+
+{1,2,5,8}
+Q4. What does the b mean in b'ABa'?
+b- byte
+Q5. What type is None?
+special type of datatype
+Round 2: Errors (2 min)
+Q6. What error? (SyntaxError or TypeError?)
+
+python
+"hello" + 5
+Typerror
+Q7. What error?
+
+python
+def = 10
+syntaxerror
+Q8. What error?
+
+python
+tup = (1, 2, 3)
+tup[0] = 99
+typerror
+Round 3: Input & Type Casting (2 min)
+Q9. What does input() always return?
+string
+Q10. Fix this code:
+
+python
+num = input("Enter age: ")
+print(num + 5)  # ERROR
+
+fixed
+
+num  =int(input("enter age : "))
+print(num+5)
+eg 
+10
+10+5 = 15
+'''
