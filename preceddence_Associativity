@@ -1,20 +1,51 @@
 Precedence Table
-Operators	Description
-()	Parentheses
-**	Exponent
-+x, -x, ~x	Unary plus, Unary minus, Bitwise NOT
-*, /, //, %	Multiplication, Division, Floor division, Modulus
-+, -	Addition, Subtraction
-<<, >>	Bitwise shift operators
-&	Bitwise AND
-^	Bitwise XOR
-|	Bitwise OR
-==, !=, >, >=, <, <=, is, is not, in, not in	Comparisons, Identity, Membership operators
-not	Logical NOT
-and	Logical AND
-or	Logical OR
-=, +=, -=, *=, /=	Assignment operators
+Operators	                                      Description
+()	                                              Parentheses
+**	                                              Exponent
++x, -x, ~x	                                      Unary plus, Unary minus, Bitwise NOT
+*, /, //, %                                       Multiplication, Division, Floor division, Modulus
++, -	                                          Addition, Subtraction
+<<, >>	                                          Bitwise shift operators
+&	                                              Bitwise AND
+^	                                              Bitwise XOR
+|	                                              Bitwise OR
+==, !=, >, >=, <, <=, is, is not, in, not in	  Comparisons, Identity, Membership operators
+not	                                              Logical NOT
+and                                               Logical AND
+or	                                              Logical OR
+=, +=, -=, *=, /=	                              Assignment operators
 Key Rules
 PEMDAS/BODMAS: Python follows standard mathematical order, starting with Parentheses and Exponents.
 Left-to-Right: Most operators are evaluated from left to right when they have the same precedence (e.g., + and -).
 Logical Order: Note that not has higher precedence than and, which is higher than or.
+
+2 + 3 * 4
+2+12
+14
+
+False and False Or True
+false Or True
+True
+
+
+Associativity
+Operators	                                      Description
+()	                                              Parentheses        (Left to Right)
+**	                                              Exponent         (Right to Left )
++x, -x, ~x	                                      Unary plus, Unary minus, Bitwise NOT  (Left to Right)
+*, /, //, %                                       Multiplication, Division, Floor division, Modulus  (Left to Right)
++, -	                                          Addition, Subtraction  (Left to Right)
+<<, >>	                                          Bitwise shift operators  (Left to Right)
+&	                                              Bitwise AND  (Left to Right)
+^	                                              Bitwise XOR  (Left to Right)
+|	                                              Bitwise OR  (Left to Right)
+==, !=, >, >=, <, <=, is, is not, in, not in	  Comparisons, Identity, Membership operators  (Left to Right)
+not	                                              Logical NOT  (Left to Right)
+and                                               Logical AND  (Left to Right)
+or	                                              Logical OR  (Left to Right)
+=, +=, -=, *=, /=	                              Assignment operators (Right to Left )
+
+
+a=5,b=2,c=3
+a=b+=c
+a=5
