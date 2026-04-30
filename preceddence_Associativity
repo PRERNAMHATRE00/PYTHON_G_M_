@@ -1,0 +1,20 @@
+Precedence Table
+Operators	Description
+()	Parentheses
+**	Exponent
++x, -x, ~x	Unary plus, Unary minus, Bitwise NOT
+*, /, //, %	Multiplication, Division, Floor division, Modulus
++, -	Addition, Subtraction
+<<, >>	Bitwise shift operators
+&	Bitwise AND
+^	Bitwise XOR
+|	Bitwise OR
+==, !=, >, >=, <, <=, is, is not, in, not in	Comparisons, Identity, Membership operators
+not	Logical NOT
+and	Logical AND
+or	Logical OR
+=, +=, -=, *=, /=	Assignment operators
+Key Rules
+PEMDAS/BODMAS: Python follows standard mathematical order, starting with Parentheses and Exponents.
+Left-to-Right: Most operators are evaluated from left to right when they have the same precedence (e.g., + and -).
+Logical Order: Note that not has higher precedence than and, which is higher than or.
