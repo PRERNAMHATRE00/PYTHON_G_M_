@@ -1,5 +1,51 @@
 typecastiong:
 
+int()
+float()
+hex()
+oct()
+bin()
+char()
+ord()
+{
+a= 50
+f=float(a)
+print(f)
+print(type(f))
+print(type(a))
+b=hex(a)
+print(b)
+print(type(b))
+c=oct(a)
+print(c)
+print(type(c))
+d=bin(a)
+print(d)
+print(type(d))
+char="A"
+e=ord(char)
+print(e)
+print(type(e))
+e=65
+char=chr(e)
+print(char)
+print(type(char))
+
+
+50.0
+<class 'float'>
+<class 'int'>
+0x32
+<class 'str'>
+0o62
+<class 'str'>
+0b110010
+<class 'str'>
+65
+<class 'int'>
+A
+<class 'str'>
+}
 by default input() always return string even if user enter integer number
 
 convert one datatype to another datatype is called typecasting
