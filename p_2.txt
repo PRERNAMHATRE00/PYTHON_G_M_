@@ -23,3 +23,191 @@ special charcter used to represent non printable or special character within a s
 \t: Tab
 \r: Carriage Return
 
+///////////////////
+Arithmethic Operators
++ Add       
+- Sub
+* multiply
+/ Divide
+// floor division 
+% Modulus
+** Exponentiation
+
+// floor division
+15 /4 =3.75
+15//4 = 3  give floor value , maybe like round figure
+
+% Modulus
+give remainder
+10/2=0
+10/3=1
+10/1=0
+10/0= error in code and is infinite
+
+
+** Exponentiation
+2**3
+2 power 3
+2**3 =8
+
+Precendance and Assiciatvity
+(**) > (* , /, // %) > (+, -)
+ H           M           L
+R-L         L-R          L-R
+
+2**4//3*2+3-5
+ 16//3*2+3-5  L-R
+ 5*2+3-5    L-R
+  10+3-5    L-R
+   13-5 
+    8
+
+Logical Operator
+In Python, logical operators are used to combine multiple conditions or expressions and produce a Boolean result.
+There are three logical operators in Python.
+and: It returns True if both the operands are True, otherwise it returns False.
+or: It returns True if at least one of the operands is True, otherwise it returns False
+not: It returns the opposite Boolean value of the operand. If the operand is True, it returns False, and if the operand is False, it returns True
+
+
+In bitwise operation is performed on individual bits whereas in logical operation is performed on whole sentence as give a result
+NOT
+AND
+OR
+
+F OR T = T
+F OR F = F
+
+F AND T = F
+F AND F = F
+T AND T = T
+
+age = 15
+income = 20000
+if age >= 18 or income >= 15000:
+print("eligible for the loan")
+else:
+print("not eligible")
+a = True
+b = False
+if not a:
+print("my name is a") # This will not be executed
+if not b:
+print("my name is b") # Output: "my name is b"
+
+
+
+
+Comparison Operators
+In Python, comparison operators are used to compare two values and return a Boolean value (True or False) depending on the result of the comparison.
+== Equal to: Returns True if the values on either side of the operator are equal, and False otherwise.
+!= Not equal to: Returns True if the values on either side of the operator are not equal, and False otherwise.
+> Greater than: Returns True if the value on the left is greater than the value on the right, and False otherwise.
+< Less than: Returns True if the value on the left is less than the value on the right, and False otherwise.
+>= Greater than or equal to: Returns True if the value on the left is greater than or equal to the value on the right, and False otherwise.
+<= Less than or equal to: Returns True if the value on the left is less than or equal to the value on the right, and False otherwise.
+
+{< ,> ,<= ,>= } > greater {== , !=}
+  L-R                 L-R
+
+4>6==False  4 in not greater than 6
+False ==False
+True
+print(bool(4>6==False)
+
+True==True==False
+True==False
+False    L-R
+
+Bitwise Operator
+In Python, bitwise operators are used to perform operations on individual bits of binary numbers.
+There are six bitwise operators.
+
+& (Bitwise AND)
+
+| (Bitwise OR)
+N (Bitwise NOT)
+^ (Bitwise XOR)
+<<< (Bitwise Left Shift)
+>> (Bitwise Right Shift)
+Precedence: ~(Highest), <<>>, &, ^, | (lowest)
+L-R
+
+AND
+0 0   0
+0 1   0
+1 0   0
+1 1   1
+
+OR 
+0 0   0
+0 1   1
+1 0   1
+1 1   1
+
+XOR
+0 0   0
+0 1   1
+1 0   1
+1 1   0
+
+same no value 0
+
+NOT
+1    0
+0    1
+
+
+Bitwise left shift
+multiply by 2
+
+bitwise right shift
+division by 2
+
+101 AND 100 | 1011 
+ 100
+
+
+Identity Operator
+These Operators used to check whether two objects are of same type or not & they share same memory location or not.
+There are 2 Identity operators: 'is' & 'is not'
+Always return "True or False" as a output.
+
+
+
+
+x          =     10
+onject name     object value / object
+
+|10___|
+1000 - mwmory location / object id 
+since everrything in python is object
+
+in python of a vraible have same value than they share  value along with its locationa nd obj id
+eg x= 10, y=10, z=10 , they all have 10 stored in one location obj id 1000
+
+
+Membership Operator
+These Operators used to test whether a specific value or item is present within a sequence, such as a string, list, tuple, or set.
+There are 2 membership operators: 'in' & 'not in'
+Always return "True or False" as a output.
+
+
+
+print(3**2+(6+6)**(1+1))
+             *      * 
+9(  12) (  2)
+9+144
+153
+
+data types 2 type 
+mutable
+list,dict,set
+immutable
+string , number, tuple
+
+
+
+
+
+
