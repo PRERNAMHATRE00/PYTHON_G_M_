@@ -1,10 +1,11 @@
+'''
 var1=1
 print(var1)
 var_1=2
 print(var_1)
 _var1=3
 print(_var1)
-1var=4     #invalid decimal lteral '''
+1var=4     #invalid decimal lteral 
 print(1var)
 var 1=5   # invalid syntax
 
@@ -25,8 +26,7 @@ A=32
 print(a)//11
 print(A)// 32
 
-
-
+'''
 
 
 

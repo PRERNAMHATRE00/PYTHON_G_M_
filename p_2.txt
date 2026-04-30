@@ -9,5 +9,17 @@ python on it own convert data , python convert lower datatype into higher data t
 eg if we perform addition between int and float than its final result will be float because python typecaste int lower data type to float data type becuase float is higher level datatype, the reason python doe sthis because to prevent low of data ,in this example int + float , f;oat require more memory compared to int ,so it convert int to float in order to prevent data loss and get accurate answer 
 
 
+
+
 explicit user convert datatype based on its own requirement to avoid getting wrong solution 
+
+////////////////////////////
+
+escape character
+special charcter used to represent non printable or special character within a string 
+
+\: Backslash
+\n: Newline
+\t: Tab
+\r: Carriage Return
 
