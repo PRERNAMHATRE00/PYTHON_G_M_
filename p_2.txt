@@ -1,3 +1,149 @@
+/////DAY 1
+ Python Syllabus
+    Module 1: Python Introduction (Why, What, Installation, Variables, Numbers, String, Print, Simple Input/Output)
+    a= 10
+    **
+    Module 2: Python Basics/Fundamentals (Operators, Comments, Various Data Types(List, Tuple, Set, Dictionary, String Formatting)
+    Module 3: Program Flow (if else, for, while loop, break continue, range, List Comprehension)
+    Module 4: Functions (Arguments & Parameters, Anonymous/Lambda, User Defined, In-Built)
+    Module 5: File Handling (CSV, JSON, Importing, Read/Write)
+    Module 6: Exceptions Handling(Build in, raise errors, error handling, try-except-finally)
+    Module 7: OOPs in Python (Class & Object, Inheritance, Abstraction, Polymorphism)
+    Module 8: Data Structure(Array, Stack, Queue, Searching, Sorting, Trees)
+    Module 9: Database in Python (Connectivity, SQLite, Select, update, Insert, Delete, Filter)
+    Module 10: Advance Topics (Decorators, Generators, Iterables, Map, Filter)
+
+
+
+
+
+
+
+    syntax easy
+    readable
+    versatile - used in any AI,ML,GUI, web, app , all using libraries in python 
+    dynamic- no need to mention datatype
+
+    DT 
+    mutable
+    immutable
+
+    Introduction to Python
+    Python is a popular programming language. It was created by Guido van Rossum, and released in 1991 at CWI(Centrum Wiskunde & Informatica) Netherland.
+    Python is General Purpose, High Level Programming Language.
+    Python is a dynamic.
+
+    general purpose- used in all domain, web,game app etc
+    HLL- human understandable lamguage, syntax is not given importance
+    Dynamic- not need to mention datatype simply
+    a= 9 // int a =9 
+
+
+
+
+    Why Python?
+    Simple & Easy to Learn -> simple like english
+
+    Platform Independent - mac , linux, windows
+
+    Free & Open Source- its free and easy to install 
+
+    Interpreted -line by line exceute  (bytecode-compiled)  - all in one load execute whole file by converting it in byte  , linking loading , execute speed faster 
+
+    Rich Library Support - 1lk and more libraries, use build in code easily 
+
+    Embeddable (other language to python ) & Extensible - (python to other language)
+
+    Portable - to transfer on other device 
+
+    Robust- error mangage , memory manage 
+
+    Where Python is Used?
+    Web frameworks and applications
+    GUI-based desktop applications
+    Graphic design, image processing applications, Games, and Scientific/ computational Applications
+    ML, AI, Neural networks
+    Data science, Data visualization
+    IOT
+    Database development
+
+
+
+    "Hello World" in Python vs Others
+
+    print("Hello, World!")
+
+    --C
+    #include <stdio.h> int main() 
+    { printf("Hello, World!\n"); return 0;
+    }
+
+    --JAVA
+    public class HelloWorld {
+    public static void main(String[] args) { System.out.println("Hello, World!");
+    }
+
+
+    in C, c+, java we have to explicitly have to mention data type but in python simply
+    a=11  int
+    a='hi"
+
+    Variables in Python
+    If the Cost Price is 25% of Selling Price, then find Profit Percentage?
+    Variables are used to store and manage data
+
+    Variable name must start with a letter or the underscore character
+    Variable name cannot start with a number.
+    Variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _)
+    Variable name case-sensitive (Name, name and NAME are three different variables)
+
+    Variable name cannot be any of the Python keywords
+
+    In python no need to tell type during run time to identify on iits own 
+
+    Data Types in Python
+    1. Numeric Types
+    int
+    float
+    complex
+    2. Text Type
+    str
+    3. Boolean Type
+    bool
+    4. Sequence Types
+    list
+    tuple
+    range
+    5. Mapping Type
+    dict
+    6. Set Types
+    set
+    7. Binary Types
+    bytes
+    bytearray
+    8. None Type
+    NoneType (None in Python)
+
+
+    list - list of item but mutable(changable)
+    tuple- list of item but immitable(unchangable)
+    range- for certain range like 0 -10 
+
+    dict- key value pairs , like sql
+
+    set - unique but unordered
+
+    bytes- img, video
+
+    none - unintialise data
+    while asigning none alue "N" must be capital- None
+    Boolean - "T" must be capitla True
+
+    byte = immutable- unchangeable
+    bytearray= mutable- changable, maniupltable 
+
+
+////DAY 2
 typecastiong:
 
 int()
@@ -49,25 +195,29 @@ A
 by default input() always return string even if user enter integer number
 
 convert one datatype to another datatype is called typecasting
+implicit - automatically
+explicit - MAnually 
 
-implicit  python cobert datatype on its own
+
+implicit  -->  python conert datatype on its own
 python on it own convert data , python convert lower datatype into higher data type not the other way(convert higher data type to lower)
 eg if we perform addition between int and float than its final result will be float because python typecaste int lower data type to float data type becuase float is higher level datatype, the reason python doe sthis because to prevent low of data ,in this example int + float , f;oat require more memory compared to int ,so it convert int to float in order to prevent data loss and get accurate answer 
 
 
 
 
-explicit user convert datatype based on its own requirement to avoid getting wrong solution 
+explicit--> user convert datatype based on its own requirement to avoid getting wrong solution 
 
 ////////////////////////////
 
 escape character
 special charcter used to represent non printable or special character within a string 
 
-\: Backslash
-\n: Newline
-\t: Tab
-\r: Carriage Return
+\: Backslash - to mention qutation marks in string
+\n: Newline   - to get to next line
+\t: Tab  - to leave space
+\\ bakslash  - to mention backslashin string
+\r: Carriage Return  - to overute word or bring next word back to zero 0
 
 ///////////////////
 Arithmethic Operators
@@ -75,9 +225,9 @@ Arithmethic Operators
 - Sub
 * multiply
 / Divide
-// floor division 
+// floor division   - round figure   eg 3.45 = 3
 % Modulus
-** Exponentiation
+** Exponentiation - power of  2** 3  2 to thr power 3= 2*2*2 = 8
 
 // floor division
 15 /4 =3.75
@@ -144,7 +294,7 @@ print("my name is b") # Output: "my name is b"
 
 
 
-Comparison Operators
+Comparison / relational Operators
 In Python, comparison operators are used to compare two values and return a Boolean value (True or False) depending on the result of the comparison.
 == Equal to: Returns True if the values on either side of the operator are equal, and False otherwise.
 != Not equal to: Returns True if the values on either side of the operator are not equal, and False otherwise.
@@ -253,7 +403,14 @@ immutable
 string , number, tuple
 
 
+unary
++x
+-x
+~x
 
+Binary operator
+x+y
+x=y
 
 
 
