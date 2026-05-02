@@ -87,3 +87,33 @@ sbzuhcih
 # False
 
 #Assignment opertor
+# num=10
+# num=num+10
+# print(num)
+
+
+# num=20
+# num +=10
+# print(num)
+#ADD
+# num=20
+# num +=num
+# print(num)
+#SUB
+num=20
+num -=num
+print(num)
+#multipy
+num=20
+num *=num
+print(num)
+#divdion
+num=20
+num /=num
+print(num)
+
+#Modulos
+num=20
+num %=num
+print(num)
+
