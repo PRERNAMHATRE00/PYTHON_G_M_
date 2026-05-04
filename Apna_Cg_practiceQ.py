@@ -100,20 +100,72 @@ sbzuhcih
 # num +=num
 # print(num)
 #SUB
-num=20
-num -=num
-print(num)
-#multipy
-num=20
-num *=num
-print(num)
-#divdion
-num=20
-num /=num
-print(num)
+# num=20
+# num -=num
+# print(num)
+# #multipy
+# num=20
+# num *=num
+# print(num)
+# #divdion
+# num=20
+# num /=num
+# print(num)
 
-#Modulos
-num=20
-num %=num
-print(num)
+# #Modulos
+# num=20
+# num %=num
+# print(num)
+# #exponent
+# num=20
+# num **=num
+# print(num)
 
+
+#Logical operator 
+# not and or
+
+# a= 10
+# b=30
+# print(not a)
+# print(not a>b)
+
+# print(not False ,"not false")
+
+
+# val1= True
+# val2 =False
+# print("value of ",val1 and val2)
+# print("value of ",val1 or val2)
+
+# print("conditional statement : ",(a<b) and (not a))
+# print("OR : ",(a<b)or(a==b))
+
+#type casting
+
+#implicit
+# a=34
+# b=62.5
+# sum= a+b
+# print(sum)
+# print(type(sum))
+# print(type(a))
+# print(type(b))
+
+
+#expliicit
+# e=int("2")
+# f=25
+# print(e+f)
+# print(type(e))
+
+
+# a=str(3.14)
+# b="PIE"
+# print(a+b)
+
+#Input
+# b=int(input("enter any number from 0-9 : "))
+# a=int(input("enter any number from 0-9 : "))
+# sum = a+b
+# print(type(sum),"  ,","Sum is : ", sum)

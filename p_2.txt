@@ -210,7 +210,7 @@ explicit--> user convert datatype based on its own requirement to avoid getting 
 
 ////////////////////////////
 
-escape character
+escape character - use for formating 
 special charcter used to represent non printable or special character within a string 
 
 \: Backslash - to mention qutation marks in string
@@ -309,7 +309,7 @@ In Python, comparison operators are used to compare two values and return a Bool
 4>6==False  4 in not greater than 6
 False ==False
 True
-print(bool(4>6==False)
+print(bool(4>6==False))
 
 True==True==False
 True==False

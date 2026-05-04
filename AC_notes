@@ -1,0 +1,76 @@
+#string 
+
+# a="hello"
+# b='hi'
+# c=""" Hi"""
+# why 3 ways because to mention " in middle of senetnce when requiresd 
+# Eg
+# I'll will call at evening 
+# We are celbrating "Golden jublee"
+
+#conatenation
+#join strings
+# a="Welcome"
+# b="Python"
+# print(a + b)
+# print(len(a))
+
+# print(a + "  "+ b)
+# print(len(a))
+
+
+#INDEXING
+# sent1="Hello"
+# # print(sent1[4])
+# sent1[2]="&"
+# print(sent1)
+#   File "c:\Users\acer\Desktop\PYTHON_G_M\AC_notes", line 25, in <module>
+#     sent1[2]="&"
+#     ~~~~~^^^
+# TypeError: 'str' object does not support item assignment
+
+#can't manipulate string 
+
+#Slicing
+name="Samsung deco"
+# print(name[2:5]) # 2:5 means - 2,3,4 - msu
+# print(name[8:len(name)])
+# print(name[0:7])
+
+# print(name[0:]) # if frogot to mentioned end_index it will assume and print untill very end
+# print(name[:len(name)]) # if forget to mention start_index it will assume and start from zero 
+# #
+# Samsung deco
+# Samsung deco
+
+# str="Apple"
+# print(str[-4:-1])
+# print(str[-3:])
+# print(str[-5:])
+# print(str[:len(str)])
+# ppl
+# ple
+# Apple
+# Apple
+
+#string function
+# substring - a small part of large string 
+
+#1) endswith()- check if that string ends wiyh given str/char or not and return boolean value
+# sent="Welcomr to the journey of Python"
+# print(sent.endswith("el"))
+# False
+# print(sent.endswith("on"))
+# True
+
+#2) capitalize() - makes forst character of sentence capital ,only first
+# it doesnt make changes in orginal string instead, i creates new string with capital first letter
+# a="hello world"
+# print(a.capitalize())
+# print(a)
+
+
+#to make orginal string capital do follwing
+# b="welcome to python"
+# b= b.capitalize()
+# print(b)
