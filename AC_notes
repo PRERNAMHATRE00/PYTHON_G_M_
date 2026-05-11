@@ -74,3 +74,34 @@ name="Samsung deco"
 # b="welcome to python"
 # b= b.capitalize()
 # print(b)
+
+
+# 3) replace(old,new)
+# sent1=("what a beautiful day " )
+# print(sent1.replace("a","o"))
+# print(sent1)
+# print(sent1.replace("beautiful","Wonderful"))
+# print(sent1)
+# whot o beoutiful doy 
+# what a beautiful day 
+# what a Wonderful day 
+# what a beautiful day 
+
+# as you can see it doesnt make changes in original 
+#to make orginal string capital do follwing 
+# sent1=("what a beautiful day " )
+# sent1=sent1.replace("beautiful", "wonderful")
+# print(sent1)
+
+
+# 4) find(word)
+# str="It was a rainy day and road where jammed that day"
+# print(str.find("day"))
+
+# print(str.find("q"))
+
+# 15
+# -1  # its not valid index, negative index is only valid in slicing  and not other funvtion
+
+str="It was a rainy day and road where jammed that day"
+print(str.count("day"))

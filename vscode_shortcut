@@ -1,0 +1,4 @@
+ctrl + /  - to comment slected multiple sentence
+
+lorem- to automatically suggest sentence
+open the command palette (F1 or cmd/ctrl+shift+p, type "lorem ipsum" and select to insert either a line or paragraph.

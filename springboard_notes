@@ -1,0 +1,27 @@
+python IDLE 
+  1 IDLE    2 python shell 
+
+  python install provide two IDLE
+  1 exe  2 shell
+
+  %11d means leave 11 spaces – used for formatting 
+  check right side value than binds the value to variable 
+  //////////////////////////
+
+  # Python 2:
+# Large numbers ended with L
+# Example: 123456789L
+# L means Long Integer
+
+# Python 3:
+# No L is shown
+# Because all integers are automatically long integers
+
+# So:
+12345678901234567890
+# is already treated as int
+
+
+Boolean has 2 values - on and off like switch 
+# ord() - character to ascii
+# chr()- ASCII to character 
