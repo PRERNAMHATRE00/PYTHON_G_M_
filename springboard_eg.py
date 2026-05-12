@@ -253,6 +253,64 @@
 # >>>
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+# STRING
+
+# >>> str="Welcome to Python"
+# >>> str
+# 'Welcome to Python'
+# >>> id(str)
+# 2237592564400
+# >>> str="Python"
+# >>> str
+# 'Python'
+# >>> id(str)
+# 140707983020848
+# >>> import ctypes
+# >>> ctypes.cast(2237592564400, ctypes.py_object).value
+# 'CFuncPtr'
+# >>> ctypes.cast(140707983020848, ctypes.py_object).value
+# 'Python'
+# >>>
 
 
+# /// LENGTH
 
+#  str="hellopython"
+# >>> len(str)
+# 11
+# >>> str="hello python"
+# >>> len(str)
+# 12
+# >>>
+
+# SUBSTRING 
+# >>> name="Ash"
+# >>> name[2]
+# 'h'
+# >>> name[0]
+# 'A'
+# >>> name[5]
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# IndexError: string index out of range
+# >>>
+
+
+# NEGATIVE INDEXING
+
+# >>>
+# >>> name[-1]
+# 'h'
+# >>> name[-2]
+# 's'
+# >>> name[-3]
+# 'A'
+# >>> name[-4]
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# IndexError: string index out of range
+# >>> name[0]
+# 'A'
+# >>> name[-3]
+# 'A'
