@@ -546,4 +546,199 @@
 # >>> bin_num.zfill(25)
 # '0000000000001010101011100'
 
+# #REPLACE
+# >>> sent="Monkeys have turtle brains"
+# >>> sent.replace("have","with")
+# 'Monkeys with turtle brains'
+# >>> sent
+# 'Monkeys have turtle brains'
+# >>> sent.replace("have",1)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: replace() argument 2 must be str, not int
+# >>> sent.replace("have","1")
+# 'Monkeys 1 turtle brains'
+# >>> sent.replace("have","with",1)
+# 'Monkeys with turtle brains'
+# >>> sent
+# 'Monkeys have turtle brains'
+# >>> sent="Monkeys have turtle brains have brians have brains"
+# >>> sent.replace("have","with",2)
+# 'Monkeys with turtle brains with brians have brains'
+# >>> sent.replace("have","with",3)
+# 'Monkeys with turtle brains with brians with brains'
+# >>>
 
+
+# #JOIM
+
+# >>> name=["Rohan","&","Sania"]
+# >>> name.join()
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'list' object has no attribute 'join'
+# >>> join(name)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'join' is not defined
+# >>> .joint(name)
+#   File "<stdin>", line 1
+#     .joint(name)
+#     ^
+# SyntaxError: invalid syntax
+# >>> "".joint(name)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'str' object has no attribute 'joint'. Did you mean: 'join'?
+# >>> .join(name)
+#   File "<stdin>", line 1
+#     .join(name)
+#     ^
+# SyntaxError: invalid syntax
+# >>> "".join(name)
+# 'Rohan&Sania'
+# >>> " ".join(name)
+# 'Rohan & Sania'
+# >>> ", ".join(name)
+# 'Rohan, &, Sania'
+# >>>
+
+# #ENDSWITH
+# >>> sent="today is a weekend"
+# >>> sent.endswith("weekend")
+# True
+# >>> sent.endswith("day")
+# False
+# >>> sent.endswith("today",0,5)
+# True
+# >>> sent.endswith("today",0,len(sent))
+# False
+# >>> len(sent)
+# 18
+# >>> sent.endswith("today",0,18)
+# False
+
+# #STARTSWITH
+# >>> sent.startswith("to")
+# True
+# >>> sent.startswith("we",11,19)
+# True
+# >>> sent.startswith("we")
+# False
+# >>>
+# >>>
+
+# #ISALPHA
+# >>> name="sunny"
+# >>> name.isalpha()
+# True
+# >>> na1="bunny"
+# >>> na1="bunny b"
+# >>> na1.isaplha()
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'str' object has no attribute 'isaplha'. Did you mean: 'isalpha'?
+# >>> na1.isalpha
+# <built-in method isalpha of str object at 0x000001DDF8F06130>
+# >>>
+# >>> na1.isalpha()
+# False
+# >>> na1="bunny"
+# >>> na1.isalpha()
+# True
+
+# #ISALNUM
+# >>> na2="536235462"
+# >>> na2.isnum()
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'str' object has no attribute 'isnum'. Did you mean: 'isalnum'?
+# >>> na2.isalnum()
+# True
+# >>> na3="5362 35462"
+# >>> na3.isalnum()
+# False
+# >>>
+# >>>
+# >>>
+
+# #ISDIGIT
+# >>> num=76475629
+# >>> num.isdigits()
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'int' object has no attribute 'isdigits'
+# >>> num.isdigit()
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'int' object has no attribute 'isdigit'
+# >>> num="76475629"
+# >>> num.isdigit()
+# True
+# >>>
+# >>>
+# >>> num1="757465gK"
+# >>> num1.isdigit()
+# False
+# >>>
+
+# #ISSPACE
+# >>> num1.isspace()
+# False
+# >>> num4=" jchjhci "
+# >>> num4.isspace()
+# False
+# >>> num4=" jchjh ci "
+# >>> num4.isspace()
+# False
+# >>> nuum5=""
+# >>> nuum5.isspace()
+# False
+# >>> nuum5=" "
+# >>> nuum5.isspace()
+# True
+# >>>
+# >>>
+
+# #ISTITLE
+# >>> name="Rohan"
+# >>> name.istitle()
+# True
+# >>> name="Rohan And Sania"
+# >>> name.istitle()
+# True
+# >>> name="Rohan and Sania"
+# >>> name.istitle()
+# False
+# >>>
+
+# ISLOWER
+# >>> name="rohan and sania"
+# >>> name.islower()
+# True
+# >>> name="Sania"
+# >>> name.islower()
+# False
+# >>> name="and76r8"
+# >>> name.islower()
+# True
+# >>> "!@#$%^&*46536376()"
+# '!@#$%^&*46536376()'
+# >>> name="!$%$^%&&*&*((((()*"
+# >>> name.islower()
+# False
+# >>> name="!$%$and1233^%&&*&*((((()*"
+# >>> name.islower()
+# True
+# >>>
+# ISUPPER
+# >>> name="MOHIT"
+# >>> name.isupper()
+# True
+# >>> name="MOHIT54364287!@#"
+# >>> name.isupper()
+# True
+# >>> name="mOHIT"
+# >>> name.isupper()
+# False
+# >>>
