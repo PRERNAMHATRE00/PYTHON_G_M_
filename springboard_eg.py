@@ -314,3 +314,111 @@
 # 'A'
 # >>> name[-3]
 # 'A'
+
+
+# SLICING STRING
+# >>>
+# >>> sent="milky way galaxy "
+# >>> sent[0:4]
+# 'milk'
+# >>> sent[:len(sent)]
+# 'milky way galaxy '
+# >>> sent[3:]
+# 'ky way galaxy '
+# >>> sent[:7]
+# 'milky w'
+# >>> sent[0:-1]
+# 'milky way galaxy'
+# >>> sent[-3:6]
+# ''
+# >>> len(sent)
+# 17
+# >>> sent[-3:11]
+# ''
+# >>> sent[-2:-11]
+# ''
+# >>>
+
+
+# >>> sent[::3]
+# 'mkw ly'
+# >>> sent[::2]
+# 'mlywyglx '
+# >>> sent[::1]
+# 'milky way galaxy '
+# >>> sent[::0]
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# ValueError: slice step cannot be zero
+# >>>
+
+# REVERSE STRING
+# >>> sent[::-1]
+# ' yxalag yaw yklim'
+
+
+
+#COUNT
+# sent.count("l")
+# 2
+# >>>
+# >>>
+# >>> str1="The MArvel"
+# >>> str.count("e")
+# 1
+# >>> str1.count("e")
+# 2
+# >>> str1="The big bag was beautiful and blue in colour"
+# >>> str1.count("b",4,30)
+# 3
+# >>>
+
+
+#FIND
+# >>> str1.find("blue")
+# 30
+# >>> str1.rfind("b")
+# 30
+# >>> str1.lfind("b")
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'str' object has no attribute 'lfind'. Did you mean: 'find'?
+# >>>
+
+# CASE function
+
+# >>> name="MISTY"
+# >>> name.lower()
+# 'misty'
+# >>> name.lower(i)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'i' is not defined. Did you mean: 'id'?
+# >>> name.lower(2)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: str.lower() takes no arguments (1 given)
+# >>>
+
+#  str= "Welcome to PYTHON"
+# >>> str.lower()
+# 'welcome to python'
+# >>> str
+# 'Welcome to PYTHON'
+# >>> str.upper()
+# 'WELCOME TO PYTHON'
+# >>> name="deco"
+# >>> name.capitalize()
+# 'Deco'
+# >>> str="i have been going to swimming everyweek"
+# >>> str,title()
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'title' is not defined. Did you mean: 'tuple'?
+# >>> str.title()
+# 'I Have Been Going To Swimming Everyweek'
+# >>> str
+# 'i have been going to swimming everyweek'
+# >>>
+
+
