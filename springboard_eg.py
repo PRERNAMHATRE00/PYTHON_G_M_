@@ -386,7 +386,7 @@
 # >>>
 
 # CASE function
-
+#LOWER
 # >>> name="MISTY"
 # >>> name.lower()
 # 'misty'
@@ -404,13 +404,19 @@
 # >>> str.lower()
 # 'welcome to python'
 # >>> str
+
+#UPPER
 # 'Welcome to PYTHON'
 # >>> str.upper()
 # 'WELCOME TO PYTHON'
 # >>> name="deco"
+
+#CAPITALIZE
 # >>> name.capitalize()
 # 'Deco'
 # >>> str="i have been going to swimming everyweek"
+
+#TITLE
 # >>> str,title()
 # Traceback (most recent call last):
 #   File "<stdin>", line 1, in <module>
@@ -420,5 +426,124 @@
 # >>> str
 # 'i have been going to swimming everyweek'
 # >>>
+
+
+#SWAPCASE
+# >>> str.swapcase()
+# 'I HAVE BEEN GOING TO SWIMMING EVERYWEEK'
+# >>> str.uppercase()
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'str' object has no attribute 'uppercase'
+# >>> str.upper()
+# 'I HAVE BEEN GOING TO SWIMMING EVERYWEEK'
+# >>>
+
+
+
+# RSTRIP
+# >>> str="the great water fallen"
+# >>> str.rstrip("en")
+# 'the great water fall'
+# >>> str
+# 'the great water fallen'
+
+#LSTRIP
+# >>> str1="EL was beautiful"
+# >>> str1.lstrip("el")
+# 'EL was beautiful'
+# >>> str1.lstrip("EN")
+# 'L was beautiful'
+# >>> str1.lstrip("EL")
+# ' was beautiful'
+# >>> str.strip()
+# 'the great water fallen'
+# >>> str1.strip()
+# 'EL was beautiful'
+
+
+#SPILT
+# >>> str="27-12-2026"
+# >>> str.spliy("-")
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'str' object has no attribute 'spliy'. Did you mean: 'split'?
+# >>> str.split("-")
+# ['27', '12', '2026']
+# >>> str.split("-",1)
+# ['27', '12-2026']
+# >>> str.split("-",0)
+# ['27-12-2026']
+# >>> str.split("-",2)
+# ['27', '12', '2026']
+# >>>
+# >>>
+
+#LIST
+# >>> list=str.split("-")
+# >>> list[]
+#   File "<stdin>", line 1
+#     list[]
+#          ^
+# SyntaxError: invalid syntax
+# >>> list[1]
+# '12'
+# >>> list[2]
+# '2026'
+# >>> list[0]
+# '27'
+# >>> print(list)
+# ['27', '12', '2026']
+# >>>
+
+
+#STRING SPLIT
+
+# >>> name="Butterfly flying"
+# >>> name.split()
+# ['Butterfly', 'flying']
+# >>> name.rsplit("ing")
+# ['Butterfly fly', '']
+# >>> name.lsplit("But")
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'str' object has no attribute 'lsplit'. Did you mean: 'rsplit'?
+# >>>
+# >>> str="25-12-2016"
+# >>> str.rsplit("-")
+# ['25', '12', '2016']
+
+#JUSTIFY
+#LJUST
+#  name="John Sohn"
+# >>> str.ljust(20,"*")
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: descriptor 'ljust' for 'str' objects doesn't apply to a 'int' object
+# >>> name.ljust(20,"*")
+# 'John Sohn***********'
+
+# #RJUST
+# >>> name.rjust(13,"*")
+# '****John Sohn'
+# >>> name.center(10,"-")
+# 'John Sohn-'
+# >>> name.center(20,"-")
+# '-----John Sohn------'
+
+
+# #ZFILL
+# >>> account_no=76372658238
+# >>> account_no.zfill(20)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'int' object has no attribute 'zfill'
+# >>> account_no="76372658238"
+# >>> account_no.zfill(20)
+# '00000000076372658238'
+# >>>
+# >>> bin_num="1010101011100"
+# >>> bin_num.zfill(25)
+# '0000000000001010101011100'
 
 
