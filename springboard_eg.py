@@ -742,3 +742,368 @@
 # >>> name.isupper()
 # False
 # >>>
+
+# //////////////////////////////
+# tuple
+# tup1=()
+# >>> tup1=()
+# >>> tup=(1,2,3,4,5,6,7,"Hi" ,"a")
+# >>> a=1,2,3,4
+# >>> tup2=1,2,3,4
+# >>> tup2
+# (1, 2, 3, 4)
+# >>> tup1
+# ()
+# >>> tup1
+# ()
+# >>> tup
+# (1, 2, 3, 4, 5, 6, 7, 'Hi', 'a')
+# >>> type(tup)
+# <class 'tuple'>
+# >>> type(tup2)
+# <class 'tuple'>
+
+# >>> fruits=("Mango","Apple","Orange","Litchi","Peach")
+# >>> fruit(0)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'fruit' is not defined. Did you mean: 'fruits'?
+# >>> fruits(0)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: 'tuple' object is not callable
+# >>> fruits[0]
+# 'Mango'
+# >>> fruits[3]
+# 'Litchi'
+# # >>>
+# >>> fruits[-1]
+# 'Peach'
+# >>> fruits[-2]
+# 'Litchi'
+# >>> fruits[2:5]
+# ('Orange', 'Litchi', 'Peach')
+# >>> fruits[3:]
+# ('Litchi', 'Peach')
+# >>> fruits[:5]
+# ('Mango', 'Apple', 'Orange', 'Litchi', 'Peach')
+# >>> fruits[::1
+# ...
+# ... s
+#   File "<stdin>", line 1
+#     fruits[::1
+#              ^
+# SyntaxError: invalid syntax. Perhaps you forgot a comma?
+# >>> fruits[::1]
+# ('Mango', 'Apple', 'Orange', 'Litchi', 'Peach')
+# >>> fruits[::3]
+# ('Mango', 'Litchi')
+# >>> fruits[-1:-4]
+# ()
+# >>> fruits[-4:-1]
+# ('Apple', 'Orange', 'Litchi')
+# >>>
+
+
+# #GENERIC FUNCRION
+
+#  a=1,b=2,c=3
+#   File "<stdin>", line 1
+#     a=1,b=2,c=3
+#     ^^^
+# SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?>>> a=1
+# >>> b=2
+# >>> c=3
+# >>> a
+# 1
+# >>> b
+# 2
+# >>> c
+# 3
+# >>> tup2=(1,2,3)
+# >>> x,z,c=tup2
+# >>> x
+# 1
+# >>> z
+# 2
+# >>> c
+# 3
+# >>> y
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'y' is not defined
+# >>> x,z,c,d=tup2
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# ValueError: not enough values to unpack (expected 4, got 3)
+# >>>
+# >>>
+# #LEN
+# >>> veg=("tomato","potato","carrot","radish")
+# >>> len(veg)
+# 4
+
+# #MAX
+# >>> max(veg)
+# 'tomato'
+# >>> max(veg)
+# 'tomato'
+# >>> num=(1,4,9,10,11.5,11.50)
+# >>> max(num)
+# 11.5
+# >>> num=(1,4,9,10,11.50,11.5)
+# >>> max(num)
+# 11.5
+# >>> num=(1,4,9,10,11.5,11.50,11.0)
+# >>> max(num)
+# 11.5
+# >>> num=(1,4,9,10,11.50,11.0,11.5)
+# >>> max(num)
+# 11.5
+# >>> num=(1,4,9,10,450,450.0)
+# >>> max(num)
+# 450
+# >>> num=(1,4,9,10,450.0,450)
+# >>> max(num)
+# 450.0
+# >>> sent=(1,543,"2","a")
+# >>> max(sent)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: '>' not supported between instances of 'str' and 'int'
+# >>> sent=(1,543,"2")
+# >>> max(sent)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: '>' not supported between instances of 'str' and 'int'
+# >>> (3,"4")
+# (3, '4')
+# >>> s=(1,"2")
+# >>> max(S)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'S' is not defined. Did you mean: 's'?
+# >>> max(s)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: '>' not supported between instances of 'str' and 'int'
+# >>> a=(500,"1")
+# >>> max(a)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: '>' not supported between instances of 'str' and 'int'
+# >>>
+
+# > tup=("a","b","c")
+# >>> len(tup)
+# 3
+# >>> max(tup)
+# 'c'
+# >>> t1=(1,2,5,9,4,50,50.0)
+# >>> max(t1)
+# 50
+# >>> t1=(1,2,5,9,4,50.0,50)
+# >>> max(t1)
+# 50.0
+# >>> t2=(900,"2")
+# >>> max(t2)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: '>' not supported between instances of 'str' and 'int'
+# >>> t3=("a","z","c")
+# >>> max(t3)
+# 'z'
+# >>> t4=("aa","ab","bb","z","cc","za","zz")
+# >>> max*t4)
+#   File "<stdin>", line 1
+#     max*t4)
+#           ^
+# SyntaxError: unmatched ')'
+# >>> max(t4)
+# 'zz'
+# >>> min(t4)
+# 'aa'
+# >>> t5=("1","3","0",1)
+# >>> t5=("1","3","0")
+# >>> min(t5)
+# '0'
+# >>> name="Ash"
+# >>> tuple(name)
+# ('A', 's', 'h')
+# >>>
+
+#  fruit=("Apple","Mango")
+# >>> veg=("Potato","radish")
+# >>> fruit+veg
+# ('Apple', 'Mango', 'Potato', 'radish')
+# >>> fruit=("Apple","Mango","tomato")
+# >>> veg=("Potato","radish","tomato")
+# >>> fruit+veg
+# ('Apple', 'Mango', 'tomato', 'Potato', 'radish', 'tomato')
+# >>> fruit*2
+# ('Apple', 'Mango', 'tomato', 'Apple', 'Mango', 'tomato')
+# >>> id(fruit[3])
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# IndexError: tuple index out of range
+# >>> id(veg[2])
+# 1566970634688
+# >>> veg(2)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: 'tuple' object is not callable
+# >>> veg[2]
+# 'tomato'
+# >>> id(veg[2])
+# 1566970634688
+# >>> fruit[2]
+# 'tomato'
+# >>> id(fruit[2])
+# 1566970634688
+# >>>
+
+
+# >>> sent="We have to go to picnic this weekend"
+# >>> if "to: in sent:
+#   File "<stdin>", line 1
+#     if "to: in sent:
+#        ^
+# SyntaxError: unterminated string literal (detected at line 1)
+# >>> sent="We have to go to picnic this weekend"
+# >>> if "to" in sent:
+# ... print"yes"
+#   File "<stdin>", line 2
+#     print"yes"
+#     ^
+# IndentationError: expected an indented block after 'if' statement on line 1
+# >>> if "to" in sent:
+# ...     print"yes"
+#   File "<stdin>", line 2
+#     print"yes"
+#     ^^^^^^^^^^
+# SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+# >>> if "to" in sent:
+# ...    print "yes"
+#   File "<stdin>", line 2
+#     print "yes"
+#     ^^^^^^^^^^^
+# SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+# >>> if "to" in sent:
+# ...     print("yes")
+# ...
+# yes
+# >>>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

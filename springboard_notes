@@ -25,3 +25,8 @@ python IDLE
 Boolean has 2 values - on and off like switch 
 # ord() - character to ascii
 # chr()- ASCII to character 
+
+Unpacking
+Taking values from a collection
+(tuple, list, etc.)
+and storing them into separate variables.
