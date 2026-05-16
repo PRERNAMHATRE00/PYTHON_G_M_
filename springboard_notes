@@ -30,3 +30,25 @@ Unpacking
 Taking values from a collection
 (tuple, list, etc.)
 and storing them into separate variables.
+
+
+
+
+TUPLES
+You likely did something like:
+
+list = [1,2,3]
+
+Now list is no longer the original Python function.
+
+It became a variable.
+
+So later:
+
+list(tup)
+
+Python thinks:
+
+[1,2,3](tup)
+
+which makes no sense.

@@ -994,116 +994,435 @@
 # yes
 # >>>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# //////////////////////////////////////////////////////////////////////
+# TUPLE
+
+# >>> list=["a",7,4,"b"]
+# >>>
+# >>> list
+# ['a', 7, 4, 'b']
+# >>> len(list)
+# 4
+# >>> max(list)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: '>' not supported between instances of 'int' and 'str'
+# >>> list1=(1,9,5,2,9,0,6,79,00)
+# >>> list1
+# (1, 9, 5, 2, 9, 0, 6, 79, 0)
+# >>> len(list1)
+# 9
+# >>> max(list1)
+# 79
+# >>> min(list1)
+# 0
+# >>> list1=("Apple","Mango")
+# >>> list1=["Apple","Mango"]
+# >>> list2=["tomato","potato"]
+# >>> list1+list2
+# ['Apple', 'Mango', 'tomato', 'potato']
+# >>> list1=[1,9,5,2,9,0,6,79,00]
+# >>> list1
+# [1, 9, 5, 2, 9, 0, 6, 79, 0]
+# >>> len(list1)
+# 9
+# >>> max(list1)
+# 79
+# >>> min(list1)
+# 0
+# >>> type(list1)
+# <class 'list'>
+# >>> list1+list2
+# [1, 9, 5, 2, 9, 0, 6, 79, 0, 'tomato', 'potato']
+# >>>
+
+# .
+# >>> #creating a list
+# >>> list=["sony","hp","tcs","infosys","ibm"]
+# >>> list
+# ['sony', 'hp', 'tcs', 'infosys', 'ibm']
+# >>> #Accesing list
+# >>> list[2]
+# 'tcs'
+# >>> list[-1]
+# 'ibm'
+# >>> lisy[-2]
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'lisy' is not defined. Did you mean: 'list'?
+# >>> list[-2]
+# 'infosys'
+# >>> list[0]
+# 'sony'
+# >>> list[7]
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# IndexError: list index out of range
+# >>> list[-8]
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# IndexError: list index out of range
+# >>>
+# >>> #slicing list
+# >>> list[1:3]
+# ['hp', 'tcs']
+# >>> list[0:len(list)]
+# ['sony', 'hp', 'tcs', 'infosys', 'ibm']
+# >>> list[:4]
+# ['sony', 'hp', 'tcs', 'infosys']
+# >>> list[2:]
+# ['tcs', 'infosys', 'ibm']
+# >>> list[-3:-1]
+# ['tcs', 'infosys']
+# >>> list[-3:0]
+# []
+# >>> list[-1:]
+# ['ibm']
+# >>> list[:-1]
+# ['sony', 'hp', 'tcs', 'infosys']
+# >>> list[0:4:2]
+# ['sony', 'tcs']
+# >>>
+# >>>
+# >>> #updating list
+# >>> list[2]
+# 'tcs'
+# >>> list[2]="TCS'
+#   File "<stdin>", line 1
+#     list[2]="TCS'
+#             ^
+# SyntaxError: unterminated string literal (detected at line 1)
+# >>> list[2]="TCS"
+# >>> list
+# ['sony', 'hp', 'TCS', 'infosys', 'ibm']
+# >>>
+# >>>
+# >>> #delete
+# >>> num=[0,2,3,4,5,6,7]
+# >>> del[2]
+#   File "<stdin>", line 1
+#     del[2]
+#         ^
+# SyntaxError: cannot delete literal
+# >>> del num[2]
+# >>> num
+# [0, 2, 4, 5, 6, 7]
+# >>> del.num[0]
+#   File "<stdin>", line 1
+#     del.num[0]
+#        ^
+# SyntaxError: invalid syntax
+# >>> del(num[1])
+# >>> num
+# [0, 4, 5, 6, 7]
+# >>>
+# >>>
+# >>> l1=[1,2,34,5]
+# >>> l2=[2,4,6,8,0]
+# >>> l3=l1+l2
+# >>> l3
+# [1, 2, 34, 5, 2, 4, 6, 8, 0]
+# >>> l1
+# [1, 2, 34, 5]
+# >>> l2
+# [2, 4, 6, 8, 0]
+# >>> l3
+# [1, 2, 34, 5, 2, 4, 6, 8, 0]
+# >>> max(l3)
+# 34
+# >>> min(l3)
+# 0
+# >>>
+# >>> #*2
+# >>> veg=["radish","beetroot"]
+# >>> veg*2
+# ['radish', 'beetroot', 'radish', 'beetroot']
+# >>> a=veg+2
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: can only concatenate list (not "int") to list
+# >>> a=veg*2
+# >>> a
+# ['radish', 'beetroot', 'radish', 'beetroot']
+# >>> id a[0]
+#   File "<stdin>", line 1
+#     id a[0]
+#        ^
+# SyntaxError: invalid syntax
+# >>> id(a[0])
+# 2060515515664
+# >>> id(a[2])
+# 2060515515664
+# >>> is id(a[2]) and id(a[0])
+#   File "<stdin>", line 1
+#     is id(a[2]) and id(a[0])
+#     ^^
+# SyntaxError: invalid syntax
+# >>>
+# >>>
+# >>> # in operator in ist
+# >>> veg=["radish","beetroot","tomato"]
+# >>> veg=["radish","beetroot","tomato","carrot","potato"]
+# >>> if "carrot" in veg:
+# ...     print("yes")
+# ...
+# yes
+# >>> if "cabbage" in veg:
+# ...     print("yes")
+# ...
+# # >>>
+# FUNCTION
+# >>> tup=(1,2,4,5)
+# >>> tup
+# (1, 2, 4, 5)
+# >>> type(tup)
+# <class 'tuple'>
+
+
+# list() is use to convert into list
+# >>> list(tup)
+# [1, 2, 4, 5]
+# >>> a=list(tup)
+# >>> a
+# [1, 2, 4, 5]
+# >>> type(a)
+# <class 'list'>
+# >>>
+
+
+
+# >>> str1="apple"
+# >>> list(str1)
+# ['a', 'p', 'p', 'l', 'e']
+# >>>
+# >>>
+# >>> len(str1)
+# 5
+# >>> a=[1,6,9,3,9,0,5,90]
+# >>> sorted(a)
+# [0, 1, 3, 5, 6, 9, 9, 90]
+# >>> b=["a","i","z"]
+# >>> sorted(b)
+# ['a', 'i', 'z']
+# >>>
+# >>>
+# SORTED alway return list
+# >>> tup1=(1,4,6,8,2,4,1,98)
+# >>> sorted(tup1)
+# [1, 1, 2, 4, 4, 6, 8, 98]
+# >>>
+
+
+
+
+#  veg=["tomato","potato"]
+# >>> fruit=["mango","strawberry"
+# ... veg.extend(fruit)
+#   File "<stdin>", line 1
+#     fruit=["mango","strawberry"
+#                    ^^^^^^^^^^^
+# SyntaxError: invalid syntax. Perhaps you forgot a comma?
+# >>> fruit=["mango","strawberry"]
+# >>> veg.extend(fruit)
+# >>>
+# >>> "aaple"
+# 'aaple'
+# >>> list1=["rohan","sania"]
+# >>> list2="leapx"
+# >>> list1.extend(list2)
+# >>> s
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 's' is not defined
+# >>>
+
+# Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)] on win32
+# Type "help", "copyright", "credits" or "license" for more information.
+# >>> veg[]
+#   File "<stdin>", line 1
+#     veg[]
+#         ^
+# SyntaxError: invalid syntax
+# >>> veg=[]
+# >>> veg.append("potato")
+# >>> veg.append("radish")
+# >>> veg
+# ['potato', 'radish']
+# >>> fruit=[]
+# >>> fruit.append("mango","banana")
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: list.append() takes exactly one argument (2 given)
+# >>> fruit.append("mango")
+# >>> fruit.append("banana")
+# >>> fruit
+# ['mango', 'banana']
+# >>> veg.append(fruit)
+# >>> veg
+# ['potato', 'radish', ['mango', 'banana']]
+# >>> veg
+# ['potato', 'radish', ['mango', 'banana']]
+# >>> name="sano"
+# >>> veg.append(name)
+# >>> veg
+# ['potato', 'radish', ['mango', 'banana'], 'sano']
+# >>> veg.extend(name)
+# >>> veg
+# ['potato', 'radish', ['mango', 'banana'], 'sano', 's', 'a', 'n', 'o']
+# >>>
+# >>>
+# >>>
+# >>> #count-to count occurence of an element
+# >>> list1=[1,243,5,5,78,4,7,8,8,,3,6,78,5,6,77,5,0]
+#   File "<stdin>", line 1
+#     list1=[1,243,5,5,78,4,7,8,8,,3,6,78,5,6,77,5,0]
+#                                 ^
+# SyntaxError: invalid syntax
+# >>> list1=[1,243,5,5,78,4,7,8,8, ,3,6,78,5,6,77,5,0]
+#   File "<stdin>", line 1
+#     list1=[1,243,5,5,78,4,7,8,8, ,3,6,78,5,6,77,5,0]
+#                                  ^
+# SyntaxError: invalid syntax
+# >>> list1=[1,243,5,5,78,4,7,8,8,4 ,3,6,78,5,6,77,5,0]
+# >>> list1.count(5)
+# 4
+# >>> list1.count(2)
+# 0
+# >>>
+# >>> #index
+# >>> veg
+# ['potato', 'radish', ['mango', 'banana'], 'sano', 's', 'a', 'n', 'o']
+# >>> veg.index[0]
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: 'builtin_function_or_method' object is not subscriptable
+# >>> veg index("sano")
+#   File "<stdin>", line 1
+#     veg index("sano")
+#         ^^^^^
+# SyntaxError: invalid syntax
+# >>> veg.index(0)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# ValueError: 0 is not in list
+# >>> veg.index("sano")
+# 3
+# >>> os=
+#   File "<stdin>", line 1
+#     os=
+#        ^
+# SyntaxError: invalid syntax
+# >>>
+# >>>
+# >>>
+# >>>
+# >>>
+# >>>
+# >>>
+# >>>
+# >>> os=['kali','ubuntu','debian','rhel',centos','rhel']
+#   File "<stdin>", line 1
+#     os=['kali','ubuntu','debian','rhel',centos','rhel']
+#                                                      ^
+# SyntaxError: unterminated string literal (detected at line 1)
+# >>> os=["kali","Ubuntu","debian","RHEL","centos","RHEL"]
+# >>> os.index("RHEL")
+# 3
+# >>> #it returns the index of first occurence of word
+# >>>
+# >>>
+# >>> #insert method
+# >>> fruit
+# ['mango', 'banana']
+# >>> fruit.insert(1,"peach")
+# >>> fruit
+# ['mango', 'peach', 'banana']
+# >>>
+# >>>
+# >>> #remove
+# >>> fruit.remove("banana")
+# >>> fruit
+# ['mango', 'peach']
+# >>>
+# >>>
+# >>> #pop - remove last ite from list
+# >>> list1=[1,5,8,2,3,4,1,8,9,0,1,3,1,2]
+# >>> list.pop()
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: unbound method list.pop() needs an argument
+# >>> list.pop(0)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: descriptor 'pop' for 'list' objects doesn't apply to a 'int' object
+# >>> string(list1)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'string' is not defined. Did you forget to import 'string'?
+# >>> a=string(list1)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'string' is not defined. Did you forget to import 'string'?
+# >>> list1=["a","b","c","r","s","f"]
+# >>> list1.pop()
+# 'f'
+# >>>
+# >>>
+# >>> #sort and reverse
+# >>> list2=[3,5,7,93,1,2,0,6]
+# >>> list2.sort()
+# >>> list2
+# [0, 1, 2, 3, 5, 6, 7, 93]
+# >>> list2.sort(reverse=true)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'true' is not defined. Did you mean: 'True'?
+# >>> list2.sort(reverse=True)
+# >>> list2
+# [93, 7, 6, 5, 3, 2, 1, 0]
+# >>> list2
+# [93, 7, 6, 5, 3, 2, 1, 0]
+# >>> list3=[5,8"a","rr",5,9,05,9.0,2,"zz","@","`"]
+#   File "<stdin>", line 1
+#     list3=[5,8"a","rr",5,9,05,9.0,2,"zz","@","`"]
+#              ^^^^
+# SyntaxError: invalid syntax. Perhaps you forgot a comma?
+# >>> list3=[5,8,"a","rr",5,9,05,9.0,2,"zz","@","`"]
+#   File "<stdin>", line 1
+#     list3=[5,8,"a","rr",5,9,05,9.0,2,"zz","@","`"]
+#                             ^
+# SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+# >>> list3=[5,8,"a","rr",5,9,0.5,9.0,2,"zz","@","`"]
+# >>> list3.sort()
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: '<' not supported between instances of 'str' and 'int'
+# >>> list3
+# [5, 8, 'a', 'rr', 5, 9, 0.5, 9.0, 2, 'zz', '@', '`']
+# >>> list3=[str(x) for x in list3]
+# >>> list3.sort()
+# >>> list3
+# ['0.5', '2', '5', '5', '8', '9', '9.0', '@', '`', 'a', 'rr', 'zz']
+# >>> list3.sort(reverse=True)
+# >>> list3
+# ['zz', 'rr', 'a', '`', '@', '9.0', '9', '8', '5', '5', '2', '0.5']
+# >>>
+# >>> tup1=[("a",4),("b",1),("v",5),("f",2)]
+# >>> def fun1(x):
+# ...            return x[1]
+# ...
+# >>> tup1.sort(key=fun1)
+# >>> print tup1
+#   File "<stdin>", line 1
+#     print tup1
+#     ^^^^^^^^^^
+# SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+# >>> print(tup1)
+# [('b', 1), ('f', 2), ('a', 4), ('v', 5)]
+# >>>
+# >>>
+# >>> #reverse
+# >>> tup1.reverse()
+# >>> tup1
+# [('v', 5), ('a', 4), ('f', 2), ('b', 1)]
+# >>>
