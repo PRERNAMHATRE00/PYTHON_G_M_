@@ -1637,14 +1637,202 @@
 # no
 # >>>
 
-#sictionary methods
+# #sictionary methods
+# Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)] on win32
+# Type "help", "copyright", "credits" or "license" for more information.
+# >>> #dictinary method
+# >>> Avengers={'iron_man":"tony","CA":"Steve","BW":"natasha"}
+#   File "<stdin>", line 1
+#     Avengers={'iron_man":"tony","CA":"Steve","BW":"natasha"}
+#               ^
+# SyntaxError: unterminated string literal (detected at line 1)
+# >>> Avengers={"iron_man":"tony","CA":"Steve","BW":"natasha"}
+# >>> Avengers
+# {'iron_man': 'tony', 'CA': 'Steve', 'BW': 'natasha'}
+# >>> Avengers2=Avengers
+# >>> Avengers2
+# {'iron_man': 'tony', 'CA': 'Steve', 'BW': 'natasha'}
+# >>> Avg=Avengers.copy()
+# >>> Avg
+# {'iron_man': 'tony', 'CA': 'Steve', 'BW': 'natasha'}
+# >>> id(Avengers)
+# 2198917100160
+# >>> id(Avengers2)
+# 2198917100160
+# >>> id(Avg)
+# 2198917099712
+# >>> Avengers["hulk"]="Bruce"
+# >>> Avengers
+# {'iron_man': 'tony', 'CA': 'Steve', 'BW': 'natasha', 'hulk': 'Bruce'}
+# >>> Avengers2
+# {'iron_man': 'tony', 'CA': 'Steve', 'BW': 'natasha', 'hulk': 'Bruce'}
+# >>> Avg
+# {'iron_man': 'tony', 'CA': 'Steve', 'BW': 'natasha'}
+# >>> Avengers["Batman"]
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# KeyError: 'Batman'
+# >>>
+# >>> Avengers.get("iron_man","not found")
+# 'tony'
+# >>> Avengers.get("batman","not found")
+# 'not found'
+# >>> Avengers.get("batman")
+# >>>
+# >>> #setdefault
+# >>> prt={80:"http",21:"ftp",22:"ssh",23:"telnet"}
+# >>> prt.setdefault(23,"unknown")
+# 'telnet'
+# >>> prt.setdefault(22,"unknown")
+# 'ssh'
+# >>> prt
+# {80: 'http', 21: 'ftp', 22: 'ssh', 23: 'telnet'}
+# >>> prt.setdefault(20,"unknown")
+# 'unknown'
+# >>> prt
+# {80: 'http', 21: 'ftp', 22: 'ssh', 23: 'telnet', 20: 'unknown'}
+# >>> prt.setdefault(1)
+# >>>
+# >>> prt
+# {80: 'http', 21: 'ftp', 22: 'ssh', 23: 'telnet', 20: 'unknown', 1: None}
+# >>> prt.setdefault(2)
+# >>> prt
+# {80: 'http', 21: 'ftp', 22: 'ssh', 23: 'telnet', 20: 'unknown', 1: None, 2: None}
+# >>>
+# >>>
+# >>> #has_key
+# >>> prt
+# {80: 'http', 21: 'ftp', 22: 'ssh', 23: 'telnet', 20: 'unknown', 1: None, 2: None}
+# >>> prt.has_key(1)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'dict' object has no attribute 'has_key'
+# >>> prt(has_key())
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'has_key' is not defined
+# >>> prt.has_key(21)
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# AttributeError: 'dict' object has no attribute 'has_key'
+# >>> 1 in prt:
+#   File "<stdin>", line 1
+#     1 in prt:
+#             ^
+# SyntaxError: invalid syntax
+# >>> 1 in prt
+# True
+# >>> 20 in prt
+# True
+# >>> 0 in prt
+# False
+# >>>
+# >>>
+# >>> #eys function method
+# >>> #keys and values function method
+# >>> prt
+# {80: 'http', 21: 'ftp', 22: 'ssh', 23: 'telnet', 20: 'unknown', 1: None, 2: None}
+# >>> prt.keys()
+# dict_keys([80, 21, 22, 23, 20, 1, 2])
+# >>> prt.values()
+# dict_values(['http', 'ftp', 'ssh', 'telnet', 'unknown', None, None])
+# >>>
+# >>>
+# >>> #update
+# >>> prt1={22:"ssh",23:"telnet",80:"http"}
+# >>> prt2={53:"dns",443:"https"}
+# >>> prt1.update(prt2)
+# >>> prt1
+# {22: 'ssh', 23: 'telnet', 80: 'http', 53: 'dns', 443: 'https'}
+# >>> prt2
+# {53: 'dns', 443: 'https'}
+# >>> id(prt1)
+# 2198920679808
+# >>> id(prt2)
+# 2198920684032
+# >>>
+# >>>
+# >>> #items
+# >>> prt.items()
+# dict_items([(80, 'http'), (21, 'ftp'), (22, 'ssh'), (23, 'telnet'), (20, 'unknown'), (1, None), (2, None)])
+# >>> prt
+# {80: 'http', 21: 'ftp', 22: 'ssh', 23: 'telnet', 20: 'unknown', 1: None, 2: None}
+# >>>
+# >>>
+# >>> #clear
+# >>> prt2
+# {53: 'dns', 443: 'https'}
+# >>> prt2.clear()
+# >>> prt2
+# {}
+# >>>
+
+# port1={80: 'http', 21: 'ftp', 22: 'ssh', 23: 'telnet'}
+# for k,v in port1.items():
+#     print(k," : ",v)
+
+# 80  :  http
+# 21  :  ftp
+# 22  :  ssh
+# 23  :  telnet
+
+# list1=[1,2,3,4,5]
+# list2=["a","b","c","d","e"]
+# dict1={}
+# for index1 in range(len(list1)):
+#     dict1[list1[index1]]=list2[index1]
+# print(dict1)
+
+
+ 
+#     for index1 in xrange(len(list1)):
+#                   ^^^^^^
+# NameError: name 'xrange' is not defined. Did you mean: 'range'?
+
+# Traceback (most recent call last):
+
+#     dict1[list1[index1]]=list2[index1]
+#                          ^^^^^
+# NameError: name 'list2' is not defined. Did you mean: 'list1'?
+
+# {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e'}
 
 
 
 
-
-
-
-
-
-
+>>> port_1={ 21: 'ftp', 22: 'ssh', 23: 'telnet'}
+>>> port_1.items()
+dict_items([(21, 'ftp'), (22, 'ssh'), (23, 'telnet')])
+>>> k,v=(80,"http")
+>>> k
+80
+>>> v
+'http'
+>>> port_1
+{21: 'ftp', 22: 'ssh', 23: 'telnet'}
+>>> port_1.iteritems()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'iteritems'
+>>>
+>>>
+>>> list1=[1,2,3,4,5]
+>>> list2=["a","b","c","d","e"]
+>>> dict1=dict([K for k in zip(list2,list2)])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'K' is not defined. Did you mean: 'k'?
+>>> dict1=dict([k for k in zip(list2,list2)])
+>>> dict1
+{'a': 'a', 'b': 'b', 'c': 'c', 'd': 'd', 'e': 'e'}
+>>>
+>>>
+>>> list1=[1,2,3]
+>>> list2["a","b","c"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list indices must be integers or slices, not tuple
+>>> list2=["a","b","c"]
+>>> zip(list1,list2)
+<zip object at 0x000001FFF9AEB040>
+>>>

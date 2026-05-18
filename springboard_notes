@@ -582,4 +582,22 @@ tuple → immutable
 Python is case-sensitive
 s ≠ S
 ```
+If SAME key exists
 
+Old value gets replaced.
+
+Example:
+
+a={1:"hello"}
+
+b={1:"bye"}
+
+a.update(b)
+
+print(a)
+
+Output:
+
+{1:'bye'}
+
+👉 "hello" got replaced by "bye"
